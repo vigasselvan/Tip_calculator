@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: "Space Mono", monospace;
+}
+
+.webpage{
+    display: flex;
+    flex-direction: row;
+    padding: 100px;
+}
+.inputSide{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
+    align-content: space-between;
+    row-gap: 40px;
+}
+.inputSide h3{
+    color:hsl(186, 14%, 43%);
+    margin: 10px 0px 10px 0px;
+}
+.inputSide input{
+    padding: 10px;
+    padding-left: 0;
+    margin: 0px;
+    border-radius: 10px;
+    border: 0;
+    height: 30px;
+    width: 80%;
+    background-color: hsl(189, 41%, 97%);
+    font-size: 25px;
+}
+.tipButtons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+.tipButtons button{
+    padding: 0 30px 0 30px;
+    margin: 10px;
+    height: 45px;
+    width: 125px;
+    border-radius: 10px;
+    border: 0;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    font-family: "Space Mono", monospace;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.tipButtons input{
+    margin: 10px;
+    height: 45px;
+    width: 125px;
+    border-radius: 10px;
+    border: 0;
+    font-family: "Space Mono", monospace;
+    font-size: 25px;
+    font-weight: 600;
+    color: hsl(186, 14%, 43%);
+    text-align: center;
+    box-sizing: border-box;     /* Include padding in width/height calculation */
+    
+}
+::placeholder{
+    color: hsl(186, 14%, 43%);
+}
+.inputSide input :active{
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(186, 14%, 43%);
+}
+
+.nofPpl input{
+    padding: 10px;
+    height: 10px;
+}
+.outputSide{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
+}

@@ -16,10 +16,10 @@ export default function Tip() {
 
         {
           [5, 10, 15, 25, 50].map((id)=>(
-            <button key={id} onClick={()=>handleClick(id)} style={{backgroundColor: clickedButtonId == id ? 'hsl(172, 67%, 45%)' : '', }}>{id}%</button>
+            <button key={id} onClick={()=>handleClick(id)} style={{backgroundColor: clickedButtonId == id ? 'hsl(172, 67%, 45%)' : '', color: clickedButtonId == id ? 'hsl(183, 100%, 15%)' : ''}}>{id}%</button>
           ))
         }
-        <input type="text" placeholder="Custom" />
+        <input type="text" placeholder="Custom" className='customTip'/>
       </div>
     </div>
   )

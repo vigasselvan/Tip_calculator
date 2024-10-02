@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDollarSign } from '@fortawesome/free-solid-svg-icons'; 
 
@@ -8,9 +8,10 @@ export default function Amount() {
 
   const billChgFunc = (e) => {
     setBillAmount(e.target.value);
+    this.props.funcBillAmount(billAmount);
   }
 
-  //now need to send the amount to the parent component - find the way.
+
 
   return (
     <div>
